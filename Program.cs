@@ -41,14 +41,14 @@ namespace Deliverable_3_Methods_CNielsen
                 UserName = Input;
 
                 //If-else statement will be used in this case to catch user errors
-                if (System.Text.RegularExpressions.Regex.IsMatch(Input, "[a-zA-Z]" + " " + "[a-zA-Z]"))
+                if (System.Text.RegularExpressions.Regex.IsMatch(Input, "[a-zA-Z]" + " " + "[a-zA-Z]+$"))
                 {
                     //Display a message to the user
                     Console.WriteLine("Hello" + " " + UserName + "!");
                     Console.WriteLine("Thank you for giving an acceptable input.");
                 }
                 //Allows user to enter one part of their name rather than the whole name
-                else if (System.Text.RegularExpressions.Regex.IsMatch(Input, "[a-zA-Z]"))
+                else if (System.Text.RegularExpressions.Regex.IsMatch(Input, @"^[a-zA-Z]+$"))
                 {
                     //Display a message to the user
                     Console.WriteLine("Hello" + " " + UserName+"!");
