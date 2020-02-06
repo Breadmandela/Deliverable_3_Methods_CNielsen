@@ -37,7 +37,7 @@ namespace Deliverable_3_Methods_CNielsen
                 //This variable will hold the user input
                 string Input = Console.ReadLine();
 
-                //This statement willput the user input into the variable declared earlier
+                //This statement willput the user input into the variable declared earlier.
                 UserName = Input;
 
                 //If-else statement will be used in this case to catch user errors
